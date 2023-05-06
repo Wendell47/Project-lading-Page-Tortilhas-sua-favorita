@@ -278,8 +278,7 @@ footer h3{
     .contentApresentation h1{
         font-size: clamp(4rem, 1rem + 15vw, 10rem);
 }
-    }
-
+    
     .contentApresentation p:nth-child(3){
         font-size: clamp(3rem, 0.8rem + 5vw, 6rem);
     }
