@@ -51,8 +51,7 @@ header{
 }
 
 header img{
-    width: 10%;
-
+    width: clamp(6rem, 1rem + 24vw, 20rem);
 }
 .menu ul{
     display: flex;
@@ -272,20 +271,26 @@ footer h3{
     }
 
     .contentApresentation h2{
-        font-size: 6rem;
+        font-size: clamp(4rem, 1rem + 10vw, 10rem);
+        margin-bottom: -2rem;
     }
 
     .contentApresentation h1{
-        font-size: 10rem;
+        font-size: clamp(4rem, 1rem + 15vw, 10rem);
+}
     }
 
     .contentApresentation p:nth-child(3){
-        font-size: 4rem;
+        font-size: clamp(3rem, 0.8rem + 5vw, 6rem);
     }
 
 
     .footerContent .col-2{
         margin-top: 20px;
+    }
+
+    .menu{
+        display: none;
     }
 }
 
