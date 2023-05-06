@@ -1,0 +1,312 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Covered+By+Your+Grace&family=Open+Sans:wght@400;700&display=swap');
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    border: none;
+    
+}
+:root{
+    font-size: 62.5%;
+
+    --color-primary:hsl(190, 49%, 10%);
+    --color-secundary:hsl(2, 100%, 31%);
+    --color-terciary:hsl(0, 0%, 100%);
+
+    --color-secundary-hover:hsl(2, 100%, 21%);
+
+    --font-primary:'Chelsea Market', cursive;
+    --font-secundary:'Open Sans', sans-serif;
+    --font-terciary: 'Covered By Your Grace', cursive;
+
+    --background-gradient:radial-gradient(circle, rgba(255,219,187,1) 0%, rgb(255, 204, 157) 62%, rgb(255, 185, 124) 100%);
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--font-secundary);
+    filter: brightness(1.06);
+
+}
+
+body img{
+    display: inherit;
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:2rem;
+}
+
+header img{
+    width: 10%;
+
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-family: var(--font-primary);
+    
+}
+
+.menu ul li a{
+    color:var(--color-primary);
+    transition: 0.1s;
+    font-size: 2.0rem;
+}
+.menu ul li a:hover{
+    opacity: 0.8;
+}
+
+.btn{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 162px;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header .btn svg{
+    width: 30%;
+}
+
+.btn-red{
+    background: var(--color-secundary);
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+  
+}
+.btn-red:hover{
+   background: var(--color-secundary-hover);
+ 
+}
+
+.apresentation{
+    background: rgb(255,219,187);
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.background_texture{
+    position:absolute;
+    left: 0;
+    bottom:0;
+    right:0;
+    top:0;
+    background: url(src/assets/projeto-tortilhas.jpg), var(--background-gradient);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    z-index: -1;
+    
+}
+
+
+.btn-primary{
+    background: var(--color-secundary);
+    color: var(--color-terciary);
+    font-family: var(--font-primary);
+    font-size: 1.9rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.align{
+    align-items: center;
+}
+
+.col{
+    width: 50%;
+}
+
+.col img{
+width: 100%;
+}
+
+.contentApresentation h1,h2{
+    font-size:14rem;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    color:var(--color-secundary);
+    margin-bottom: -2rem;
+}
+
+.contentApresentation h2{
+    font-size: 8rem;
+    color: var(--color-secundary-hover);
+    font-family: var(--font-terciary);
+    margin-bottom: -4rem;
+}
+.contentApresentation p{
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    margin-left: 1.6rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.contentApresentation p:nth-child(3){
+    font-size: 6rem;
+    font-family: var(--font-primary);
+    color: var(--color-secundary-hover);
+    font-weight: 400;
+}
+.contentApresentation span{
+color: var(--color-terciary);
+background-image: url(src/assets/texture1.svg);
+background-position: center;
+background-repeat: no-repeat;
+padding: 0 20px;
+}
+
+.contentApresentation .btn{
+    margin-left:1.6rem ;
+    padding: 1.9rem;
+    width: 190px;
+    transition: 0.1s;
+}
+.contentApresentation .btn:hover{
+    background: var(--color-secundary-hover);
+}
+.borderBottomMask{
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom: 0;
+    display: flex;
+}
+
+.contentBody{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.contentBody h3,.contentBody span{
+    text-align: center;
+    display: block;
+    font-family: var(--font-primary);
+}
+.contentBody span{
+    color: var(--color-secundary);
+}
+.cardProduct img{
+    width: 100%;
+}
+.cardProduct h3,.cardProduct span{
+    text-align: left;
+}
+.cardProduct p{
+    margin: 15px 0;
+}
+.col-2{
+    width: 25%;
+}
+
+
+footer{
+
+    background: var(--color-secundary);
+    border: 0;
+}
+
+.footerContent{
+    padding: 50px 0;
+}
+.footerContent ul{
+    list-style: none;
+}
+footer p,footer a{
+    color: #ffbbb1b2;
+}
+footer h3{
+    color: #ffbbb1;
+    margin-bottom: 15px;
+}
+.footerEnd{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff1e;
+    border-bottom: 1px solid #ffffff1e;
+}
+
+.Copyright{
+
+    text-align: center;
+    padding: 20px 0;
+}
+
+.marginTop{
+    margin-top:80px;
+}
+@media (max-width:750px){
+    .col,.col-2{
+        width: 100%;
+    }
+    .contentBody .col-2{
+        width: 50%;
+    }
+
+    .contentApresentation h2{
+        font-size: 6rem;
+    }
+
+    .contentApresentation h1{
+        font-size: 10rem;
+    }
+
+    .contentApresentation p:nth-child(3){
+        font-size: 4rem;
+    }
+
+
+    .footerContent .col-2{
+        margin-top: 20px;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+   position: absolute;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-secundary); 
+    border-radius:50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secundary-hover); 
+  }
