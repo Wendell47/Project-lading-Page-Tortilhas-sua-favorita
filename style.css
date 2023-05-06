@@ -195,7 +195,7 @@ padding: 0 20px;
     position: absolute;
     left: 0;
     right:0;
-    bottom: 0;
+    bottom: -1px;
     display: flex;
 }
 
@@ -225,6 +225,9 @@ padding: 0 20px;
     width: 25%;
 }
 
+body > div:nth-child(2) > img{
+    margin-bottom: -1px;
+}
 
 footer{
 
@@ -260,7 +263,7 @@ footer h3{
 }
 
 .marginTop{
-    margin-top:80px;
+    margin-top:20px;
 }
 @media (max-width:750px){
     .col,.col-2{
@@ -271,7 +274,7 @@ footer h3{
     }
 
     .contentApresentation h2{
-        font-size: clamp(4rem, 1rem + 10vw, 10rem);
+        font-size: clamp(1rem, 0.8rem + 9vw, 8rem);
         margin-bottom: -2rem;
     }
 
@@ -282,7 +285,9 @@ footer h3{
     .contentApresentation p:nth-child(3){
         font-size: clamp(3rem, 0.8rem + 5vw, 6rem);
     }
-
+   .contentApresentation p{
+    font-size: 1.4rem;
+   }
 
     .footerContent .col-2{
         margin-top: 20px;
@@ -290,6 +295,14 @@ footer h3{
 
     .menu{
         display: none;
+    }
+    .marginTop{
+        margin-top:40px;
+    }
+
+    .apresentation{
+        height: max-content;
+        padding-bottom:80px;
     }
 }
 
